@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="VacDryData" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="VacDryData">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Time" type="xs:int" minOccurs="0" />
+                <xs:element name="Expected" type="xs:double" minOccurs="0" />
+                <xs:element name="Actual" type="xs:double" minOccurs="0" />
+                <xs:element name="ValveAngle" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <VacDryData>
+    <Time>0</Time>
+    <Expected>764</Expected>
+    <Actual>764.8</Actual>
+    <ValveAngle>10</ValveAngle>
+  </VacDryData>
+  <VacDryData>
+    <Time>60</Time>
+    <Expected>550</Expected>
+    <Actual>500</Actual>
+    <ValveAngle>12</ValveAngle>
+  </VacDryData>
+  <VacDryData>
+    <Time>120</Time>
+    <Expected>330</Expected>
+    <Actual>400</Actual>
+    <ValveAngle>14</ValveAngle>
+  </VacDryData>
+  <VacDryData>
+    <Time>200</Time>
+    <Expected>220</Expected>
+    <Actual>150</Actual>
+    <ValveAngle>16</ValveAngle>
+  </VacDryData>
+  <VacDryData>
+    <Time>280</Time>
+    <Expected>110</Expected>
+    <Actual>50</Actual>
+    <ValveAngle>18</ValveAngle>
+  </VacDryData>
+  <VacDryData>
+    <Time>360</Time>
+    <Expected>.1</Expected>
+    <Actual>10</Actual>
+    <ValveAngle>25</ValveAngle>
+  </VacDryData>
+  <VacDryData>
+    <Time>390</Time>
+    <Expected>200</Expected>
+    <Actual>180</Actual>
+    <ValveAngle>45</ValveAngle>
+  </VacDryData>
+  <VacDryData>
+    <Time>435</Time>
+    <Expected>764</Expected>
+    <Actual>764</Actual>
+    <ValveAngle>45</ValveAngle>
+  </VacDryData>
+</NewDataSet>

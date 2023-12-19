@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="nAble_for_nRad2.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RunningDaysToKeepLogs" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="CognexCommunicationsInstalled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Database" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">nAble</Value>
+    </Setting>
+    <Setting Name="DataSource" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DC1\MSSQLSERVER2008</Value>
+    </Setting>
+    <Setting Name="UseLogDB" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="HasAnalogInputs" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TemplateVersion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2.06</Value>
+    </Setting>
+    <Setting Name="ShowBypassVacuum" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="HasAdvantechServer" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="HasRIOAutomation" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

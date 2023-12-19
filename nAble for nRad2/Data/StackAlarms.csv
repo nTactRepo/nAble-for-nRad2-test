@@ -1,0 +1,99 @@
+1,Emergency Stop,Red
+2,Low Air Pressure,Red
+3,Z-Axis Alarm,Red
+4,Y-Axis Alarm,Red
+5,Hotplate 1 Comm Failure - Temp Controller,Red
+6,Hotplate 1 Comm Failure - I/O Module,Red
+7,Hotplate 1 Comm Failure - Cool Muscle,Red
+8,Hotplate 2 Comm Failure - Temp Controller,Red
+9,Hotplate 2 Comm Failure - I/O Module,Red
+10,Hotplate 2 Comm Failure - Cool Muscle,Red
+11,Chillplate Comm Failure - Temp Controller,Red
+12,ChillplateComm Failure - I/O Module,Red
+13,Chillplate Comm Failure - Cool Muscle,Red
+14,Vac Dry Comm Failure - I/O Mdule,Red
+15,Hotplate 1 Lift Pins Failure,Red
+16,Hotplate 2 Lift Pins Failure,Red
+17,Chillplate Lift Pins Failure,Red
+18,Low System Vacuum,Red
+19,Vac Dry Pump Failure,Red
+20,Loader Door Open,Red
+21,Left Front Enclosure Door Open,Red
+22,Right Front Enclosure Door Open,Red
+23,Right Side Enclosure Door Open,Red
+24,Left Rear Enclosure Door Open,Red
+25,Right Rear Enclosure Door Open,Red
+26,Alarm,Red
+27,Alarm,Red
+28,Alarm,Red
+29,Alarm,Red
+30,Alarm,Red
+31,Alarm,Red
+32,Alarm,Red
+33,Hotplate 1 Not Heating,Yellow
+34,Hotplate 1 Load Failure,Yellow
+35,Hotplate 1 Unload Failure,Yellow
+36,Hotplate 1 Unload Aborted,Yellow
+37,Hotplate 1 Door Open Failure,Yellow
+38,Hotplate 1 Door Close Failure,Yellow
+39,Hotplate 1 Chuck Vacuum Failure,Yellow
+40,Hotplate 2 Not Heating,Yellow
+41,Hotplate 2 Load Failure,Yellow
+42,Hotplate 2 Unload Failure,Yellow
+43,Hotplate 2 Unload Aborted,Yellow
+44,Hotplate 2 Door Open Failure,Yellow
+45,Hotplate 2 Door Close Failure,Yellow
+46,Hotplate 2 Chuck Vacuum Failure,Yellow
+47,Alarm,Yellow
+48,Chillplate Load Failure,Yellow
+49,Chillplate Unload Failure,Yellow
+50,Chillplate Unload Aborted,Yellow
+51,Chillplate Door Open Failure,Yellow
+52,Chillplate Door Close Failure,Yellow
+53,Chillplate Chuck Vacuum Failure,Yellow
+54,Alarm,Yellow
+55,Vac Dry Load Failure,Yellow
+56,Vac Dry Unload Failure,Yellow
+57,Vac Dry Unload Aborted,Yellow
+58,Vac Dry Door Open Failure,Yellow
+59,Vac Dry Door Close Failure,Yellow
+60,Vac Dry Vacuum Failure,Yellow
+61,Load Door Open Failure,Yellow
+62,Load Door Close Failure,Yellow
+63,Main Door Lock Failure,Yellow
+64,Alarm,Yellow
+65,Loader Must Be Homed,Orange
+66,Alarm,Orange
+67,Alarm,Orange
+68,Alarm,Orange
+69,Alarm,Orange
+70,Alarm,Orange
+71,Alarm,Orange
+72,Alarm,Orange
+73,Alarm,Orange
+74,Alarm,Orange
+75,Alarm,Orange
+76,Alarm,Orange
+77,Alarm,Orange
+78,Alarm,Orange
+79,Alarm,Orange
+80,Alarm,Orange
+81,Alarm,Orange
+82,Alarm,Orange
+83,Alarm,Orange
+84,Alarm,Orange
+85,Alarm,Orange
+86,Alarm,Orange
+87,Alarm,Orange
+88,Alarm,Orange
+89,Alarm,Orange
+90,Alarm,Orange
+91,Alarm,Orange
+92,Alarm,Orange
+93,Alarm,Orange
+94,Alarm,Orange
+95,Alarm,Orange
+96,Alarm,Orange
+97,Alarm,Yellow
+98,Alarm,Yellow
+99,Alarm,Yellow

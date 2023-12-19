@@ -1,0 +1,257 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>nAble_for_nRad2</RootNamespace>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Configurations>Debug;Release;DemoMode</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyTitle>nAble for nRad 2</AssemblyTitle>
+    <AssemblyDescription>nRad 2 HMI application</AssemblyDescription>
+    <AssemblyConfiguration></AssemblyConfiguration>
+    <AssemblyCompany>nTact</AssemblyCompany>
+    <AssemblyProduct>nAble for nRad 2</AssemblyProduct>
+    <AssemblyCopyright>Copyright © nTact 2016</AssemblyCopyright>
+    <AssemblyTrademark></AssemblyTrademark>
+    <AssemblyCulture></AssemblyCulture>
+    <ComVisible>false</ComVisible>
+    <Guid>82a70916-b4ac-46d3-8d1f-9f27568e2e09</Guid>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyFileVersion>4110.2312.1513.0942</AssemblyFileVersion>
+    <AssemblyInformationalVersion>4.1.1.0</AssemblyInformationalVersion>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DemoMode|AnyCPU'">
+    <DefineConstants>$(DefineConstants);DEMOMODE; DISABLE_LICENSE_MGR;DEBUG</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>$(DefineConstants);DISABLE_LICENSE_MGR;DEBUG</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Source\Model\Recipes\ProcessRecipe.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Data\Galil TC Codes.csv" />
+    <None Remove="Data\StackAlarms.csv" />
+    <None Remove="Data\Templates\defaultsTemplate.xml" />
+    <None Remove="Data\TrendingData\VacDryDataExample.xml" />
+    <None Remove="Data\TrendingData\VacDryDataSchema.xml" />
+    <None Remove="Libs\Advantech.Adam.DLL" />
+    <None Remove="Libs\Advantech.Adam.xml" />
+    <None Remove="Libs\Advantech.Common.DLL" />
+    <None Remove="Libs\Advantech.Common.xml" />
+    <None Remove="Libs\Advantech.Graph.dll" />
+    <None Remove="Libs\Advantech.Graph.xml" />
+    <None Remove="Libs\Advantech.Protocol.DLL" />
+    <None Remove="Libs\Advantech.Protocol.xml" />
+    <None Remove="Libs\CmnLib.dll" />
+    <None Remove="Libs\Cognex.Cnx.CioMicro.dll" />
+    <None Remove="Libs\Cognex.InSight.Controls.Display.dll" />
+    <None Remove="Libs\Cognex.InSight.dll" />
+    <None Remove="Libs\EEIP.dll" />
+    <None Remove="Libs\Interop.ACTETHERLib.dll" />
+    <None Remove="Libs\Interop.ACTPCUSBLib.dll" />
+    <None Remove="Libs\Interop.Galil.dll" />
+    <None Remove="Libs\Interop.INTEGMOTORINTERFACELib.dll" />
+    <None Remove="Libs\KeyUsbDrv.dll" />
+    <None Remove="Libs\LKIF2.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\Galil TC Codes.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\StackAlarms.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Templates\defaultsTemplate.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\TrendingData\VacDryDataExample.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\TrendingData\VacDryDataSchema.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Advantech.Adam.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Advantech.Adam.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Advantech.Common.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Advantech.Common.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Advantech.Graph.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Advantech.Graph.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Advantech.Protocol.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Advantech.Protocol.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\CmnLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Cognex.Cnx.CioMicro.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Cognex.InSight.Controls.Display.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Cognex.InSight.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\EEIP.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Interop.ACTETHERLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Interop.ACTPCUSBLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Interop.Galil.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Interop.INTEGMOTORINTERFACELib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\KeyUsbDrv.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\LKIF2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj" />
+    <ProjectReference Include="..\Support2\Support2.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Source\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="nAble_for_nRad2.Properties" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HIC.System.Windows.Forms.DataVisualization" Version="1.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="System.IO.Ports" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Advantech.Adam">
+      <HintPath>..\..\..\nRad2\nAble\Libs\Advantech.Adam.DLL</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Advantech.Common">
+      <HintPath>..\..\..\nRad2\nAble\Libs\Advantech.Common.DLL</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Advantech.Graph">
+      <HintPath>..\..\..\nRad2\nAble\Libs\Advantech.Graph.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Advantech.Protocol">
+      <HintPath>..\..\..\nRad2\nAble\Libs\Advantech.Protocol.DLL</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Cognex.Cnx.CioMicro">
+      <HintPath>..\..\..\nRad2\nAble\Libs\Cognex.Cnx.CioMicro.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Cognex.InSight">
+      <HintPath>..\..\..\nRad2\nAble\Libs\Cognex.InSight.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Cognex.InSight.Controls.Display">
+      <HintPath>..\..\..\nRad2\nAble\Libs\Cognex.InSight.Controls.Display.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevComponents.Charts.Design">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.Charts.Design.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Charts">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Charts.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Schedule">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Schedule.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="EEIP">
+      <HintPath>..\..\..\nRad2\nAble\Libs\EEIP.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.ACTETHERLib">
+      <HintPath>..\..\..\nRad2\nAble\Libs\Interop.ACTETHERLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.ACTPCUSBLib">
+      <HintPath>..\..\..\nRad2\nAble\Libs\Interop.ACTPCUSBLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Galil">
+      <HintPath>Libs\Interop.Galil.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.INTEGMOTORINTERFACELib">
+      <HintPath>..\..\..\nRad2\nAble\Libs\Interop.INTEGMOTORINTERFACELib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

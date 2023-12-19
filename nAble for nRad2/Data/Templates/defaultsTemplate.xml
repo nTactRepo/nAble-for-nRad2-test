@@ -1,0 +1,1277 @@
+<?xml version="1.0" standalone="yes"?>
+<Recipe>
+	<Name>Defaults</Name>
+	<TemplateVersion>2.06</TemplateVersion>
+	<Description>Recipe Template For Loading Initial Default Values.</Description>
+	<LastUpdate>2022-11-25T20:43:25.6062842-05:00</LastUpdate>
+	<LastUpdatedBy>nTact</LastUpdatedBy>
+	<ProgramName>DEFAULT TEMPLATE</ProgramName>
+	<IsSegmented>false</IsSegmented>
+	<IsMultiPanel>false</IsMultiPanel>
+	<UsingPanel1>false</UsingPanel1>
+	<UsingPanel2>false</UsingPanel2>
+	<UsingPanel3>false</UsingPanel3>
+	<VerifyFiducials>false</VerifyFiducials>
+	<ReleaseVacuumOnCompletion>false</ReleaseVacuumOnCompletion>
+	<UnloadSubstrateOnCompletion>false</UnloadSubstrateOnCompletion>
+	<UsingKeyenceLaser>false</UsingKeyenceLaser>
+	<KeyenceProgramNumber>0</KeyenceProgramNumber>
+	<IRPowerLevelDuringCoating>0</IRPowerLevelDuringCoating>
+	<IRPowerLevelOnReturn>0</IRPowerLevelOnReturn>
+	<UseIRDuringCoating>false</UseIRDuringCoating>
+	<UseIROnReturn>false</UseIROnReturn>
+	<RecipeParams>
+		<RecipeParam>
+			<Name>1) X-AXIS to PLE - Location</Name>
+			<Description>Priming Leading Edge Horizontal Location</Description>
+			<Units>mm</Units>
+			<DataType>Double</DataType>
+			<Value>81</Value>
+			<Array>params</Array>
+			<Location>25</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>2a) Priming Dispense Rate</Name>
+			<Description />
+			<Units>ul/s</Units>
+			<DataType>Double</DataType>
+			<Value>10</Value>
+			<Array>params</Array>
+			<Location>26</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>2b) Priming Dispense Delay</Name>
+			<Description>Time before horizontal motion starts</Description>
+			<Units>ms</Units>
+			<DataType>int</DataType>
+			<Value>7000</Value>
+			<Array>params</Array>
+			<Location>27</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>3) Move to PTE -  X Speed</Name>
+			<Description />
+			<Units>mm/s</Units>
+			<DataType>Double</DataType>
+			<Value>5</Value>
+			<Array>params</Array>
+			<Location>28</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>3a) Dispense Stop Offset</Name>
+			<Description>Offset back from End of Prime to STOP priming dispense</Description>
+			<Units>mm</Units>
+			<DataType>Double</DataType>
+			<Value>10</Value>
+			<Array>params</Array>
+			<Location>29</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>5) X Coating Leading Edge - Position</Name>
+			<Description />
+			<Units>mm</Units>
+			<DataType>Double</DataType>
+			<Value>225</Value>
+			<Array>params</Array>
+			<Location>30</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>7a) Coating Dispense - Rate</Name>
+			<Description />
+			<Units>ul/s</Units>
+			<DataType>Double</DataType>
+			<Value>21</Value>
+			<Array>params</Array>
+			<Location>32</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>7b) Coating Dispense Start Delay </Name>
+			<Description>Time to delay before starting horizontal move</Description>
+			<Units>ms</Units>
+			<DataType>int</DataType>
+			<Value>1000</Value>
+			<Array>params</Array>
+			<Location>33</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>8) X move to End Of Coating - position</Name>
+			<Description>Final location before return.  (Distance from home.)</Description>
+			<Units>mm</Units>
+			<DataType>Double</DataType>
+			<Value>742</Value>
+			<Array>params</Array>
+			<Location>34</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>8a) Dispense Stop location (delta from end)</Name>
+			<Description>Distance FROM End of Coat position to stop dispense.</Description>
+			<Units>mm</Units>
+			<DataType>Double</DataType>
+			<Value>5</Value>
+			<Array>params</Array>
+			<Location>35</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>6b) Coating Offset Delay </Name>
+			<Description>Time to delay before moving to coating gap</Description>
+			<Units>ms</Units>
+			<DataType>int</DataType>
+			<Value>1000</Value>
+			<Array>params</Array>
+			<Location>37</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Segment Count</Name>
+			<Description>Number of Segments</Description>
+			<Units>#</Units>
+			<DataType>int</DataType>
+			<Value>4</Value>
+			<Array>params</Array>
+			<Location>62</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Segment Coat Length</Name>
+			<Description>Distance to coat each segments</Description>
+			<Units>mm</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>63</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Segment Gap Length</Name>
+			<Description>Distance to coat each segments</Description>
+			<Units>mm</Units>
+			<DataType>Double</DataType>
+			<Value>15</Value>
+			<Array>params</Array>
+			<Location>64</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Pump Start Offset</Name>
+			<Description>Distance before touch that Pump Starts</Description>
+			<Units>mm</Units>
+			<DataType>Double</DataType>
+			<Value>2</Value>
+			<Array>params</Array>
+			<Location>65</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Pump Stop Offset</Name>
+			<Description>Distance before touch that Pump Starts</Description>
+			<Units>mm</Units>
+			<DataType>Double</DataType>
+			<Value>2</Value>
+			<Array>params</Array>
+			<Location>66</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Gap Z Jump Speed</Name>
+			<Description>Velocity of Jump</Description>
+			<Units>mm/s</Units>
+			<DataType>Double</DataType>
+			<Value>200</Value>
+			<Array>params</Array>
+			<Location>69</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Gap Z Jump Accel</Name>
+			<Description>Accel</Description>
+			<Units>mm/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>400</Value>
+			<Array>params</Array>
+			<Location>70</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Gap Z Jump Decel</Name>
+			<Description>Decel</Description>
+			<Units>mm/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>400</Value>
+			<Array>params</Array>
+			<Location>71</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Gap Z Jump S-Curve</Name>
+			<Description>SCurve</Description>
+			<Units>%</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>72</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Z Jump Height</Name>
+			<Description>Distance above coat gap to raise die</Description>
+			<Units>um</Units>
+			<DataType>Double</DataType>
+			<Value>1000</Value>
+			<Array>params</Array>
+			<Location>73</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Jump Velocity</Name>
+			<Units>mm/sec</Units>
+			<DataType>Double</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>74</Location>
+		</RecipeParam>
+		<RecipeParam>
+      <Name>Air Knife Pitch</Name>
+      <Units>mm</Units>
+      <DataType>Double</DataType>
+      <Value>100</Value>
+      <Array>params</Array>
+      <Location>75</Location>
+    </RecipeParam>
+    <RecipeParam>
+      <Name>Air Knife Coating Start Offset</Name>
+      <Description>Offset From CLE To Turn On Air Knife During Coating. (mm)</Description>
+      <Units>mm</Units>
+      <DataType>Double</DataType>
+      <Value>0</Value>
+      <Array>params</Array>
+      <Location>76</Location>
+      <Formatting />
+      <IsEditable>true</IsEditable>
+    </RecipeParam>
+    <RecipeParam>
+      <Name>Air Knife Post Coat Distance</Name>
+      <Description>X-Axis continuance after end of coating to account for air knife location.</Description>
+      <Units>mm</Units>
+      <DataType>double</DataType>
+      <Value>50</Value>
+      <Array>params</Array>
+      <Location>77</Location>
+      <Formatting />
+      <IsEditable>true</IsEditable>
+    </RecipeParam>
+    <RecipeParam>
+      <Name>Air Knife Usage</Name>
+      <Description>Turn on/off AirKnife on coat and/or return</Description>
+      <Units>#</Units>
+      <DataType>int</DataType>
+      <Value>0</Value>
+      <Array>params</Array>
+      <Location>78</Location>
+      <Formatting />
+      <IsEditable>true</IsEditable>
+    </RecipeParam>
+    <RecipeParam>
+      <Name>Air Knife Post Coat Delay</Name>
+      <Units>sec</Units>
+      <DataType>double</DataType>
+      <Value>0</Value>
+      <Array>params</Array>
+      <Location>79</Location>
+      <Formatting />
+      <IsEditable>true</IsEditable>
+    </RecipeParam>
+    <RecipeParam>
+      <Name>Air Knife Shuttle Velocity</Name>
+      <Units>mm/s</Units>
+      <DataType>double</DataType>
+      <Value>50</Value>
+      <Array>params</Array>
+      <Location>80</Location>
+      <Formatting />
+      <IsEditable>true</IsEditable>
+    </RecipeParam>
+    <RecipeParam>
+      <Name>Use Air Knife After Coating</Name>
+      <Units>0/1</Units>
+      <DataType>int</DataType>
+      <Value>0</Value>
+      <Array>params</Array>
+      <Location>81</Location>
+      <Formatting />
+      <IsEditable>true</IsEditable>
+    </RecipeParam>
+    <RecipeParam>
+      <Name>7a) Coating Dispense - Acceleration</Name>
+      <Description />
+      <Units>ul/s^2</Units>
+      <DataType>int</DataType>
+      <Value>4200</Value>
+      <Array>params</Array>
+      <Location>85</Location>
+      <Formatting />
+      <IsEditable>true</IsEditable>
+    </RecipeParam>
+    <RecipeParam>
+			<Name>7a) Coating Dispense - Deceleration</Name>
+			<Description />
+			<Units>ul/s^2</Units>
+			<DataType>int</DataType>
+			<Value>42</Value>
+			<Array>params</Array>
+			<Location>86</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>7a) Coating Dispense - S-curve</Name>
+			<Description />
+			<Units>%</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>87</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>0) Enable Priming</Name>
+			<Description />
+			<Units>bool</Units>
+			<DataType>bool</DataType>
+			<Value>1</Value>
+			<Array>params</Array>
+			<Location>89</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>i Raise Z - Height</Name>
+			<Description>Distance from 'Home'</Description>
+			<Units />
+			<DataType>Double</DataType>
+			<Value>1</Value>
+			<Array>params</Array>
+			<Location>90</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>i Raise Z - Speed</Name>
+			<Description>Raise Speed</Description>
+			<Units>mm/s</Units>
+			<DataType>Double</DataType>
+			<Value>30</Value>
+			<Array>params</Array>
+			<Location>91</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>i Raise Z - Accel</Name>
+			<Description>Z Raise Accel</Description>
+			<Units>mm/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>41</Value>
+			<Array>params</Array>
+			<Location>92</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>i Raise Z - Decel</Name>
+			<Description>Raise Z Decel</Description>
+			<Units>mm/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>30</Value>
+			<Array>params</Array>
+			<Location>93</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>i Raise Z - S-Curve</Name>
+			<Description>Z Raise Smoothing Curve</Description>
+			<Units>%</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>94</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>1) X-AXIS move to PLE - Speed</Name>
+			<Description>Horizontal Speed to Priming Leading Edge</Description>
+			<Units>mm/s</Units>
+			<DataType>Double</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>96</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>1) X-AXIS move to PLE - Accel</Name>
+			<Description>Horizontal move to Priming Leading Edge acceleration</Description>
+			<Units>mm/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>200</Value>
+			<Array>params</Array>
+			<Location>97</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>1) X-AXIS move to PLE - Decel</Name>
+			<Description>Horizontal move to Priming Leading Edge deceleration</Description>
+			<Units>mm/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>200</Value>
+			<Array>params</Array>
+			<Location>98</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>1) X-AXIS move to PLE - S-Curve</Name>
+			<Description>Horizontal Move to Priming Leading Edge Smoothing Curve</Description>
+			<Units>%</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>99</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>2) Z move to Priming Gap Height - Location</Name>
+			<Description>Distance above Substrate</Description>
+			<Units>um</Units>
+			<DataType>int</DataType>
+			<Value>50</Value>
+			<Array>params</Array>
+			<Location>100</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>2) Z move to Priming Gap Height - Speed</Name>
+			<Description />
+			<Units>mm/s</Units>
+			<DataType>Double</DataType>
+			<Value>50</Value>
+			<Array>params</Array>
+			<Location>101</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>2) Z move to Priming Gap Height - Acceleration</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>102</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>2) Z move to Priming Gap Height - Deceleration</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>103</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>2) Z move to Priming Gap Height - S-Curve</Name>
+			<Description />
+			<Units>%</Units>
+			<DataType>Double</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>104</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>3) Move to PTE -  X Target Location</Name>
+			<Description>Move to Priming Trailing Edge</Description>
+			<Units>mm</Units>
+			<DataType>Double</DataType>
+			<Value>193</Value>
+			<Array>params</Array>
+			<Location>106</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>3) Move to PTE - Acceleration</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>int</DataType>
+			<Value>82</Value>
+			<Array>params</Array>
+			<Location>107</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>3) Move to PTE - Deceleration</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>int</DataType>
+			<Value>82</Value>
+			<Array>params</Array>
+			<Location>108</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>3) Move to PTE - S-curve</Name>
+			<Description />
+			<Units>%</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>109</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Selected Pump</Name>
+			<Description>Pump-A or Pump-B or Mixing</Description>
+			<Units></Units>
+			<DataType>int</DataType>
+			<Value>0</Value>
+			<Array>params</Array>
+			<Location>110</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Pump-A Ratio</Name>
+			<Description>Percent of total dispense/recharge rate</Description>
+			<Units>%</Units>
+			<DataType>Double</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>111</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Pump-B Ratio</Name>
+			<Description>Percent of total dispense/recharge rate</Description>
+			<Units>%</Units>
+			<DataType>Double</DataType>
+			<Value>0</Value>
+			<Array>params</Array>
+			<Location>112</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>4) Z move for jump - Position</Name>
+			<Description>Distance above substrate</Description>
+			<Units>um</Units>
+			<DataType>Double</DataType>
+			<Value>1000</Value>
+			<Array>params</Array>
+			<Location>115</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>4) Z move for jump - Speed</Name>
+			<Description />
+			<Units>mm/s</Units>
+			<DataType>int</DataType>
+			<Value>50</Value>
+			<Array>params</Array>
+			<Location>116</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>4) Z move for jump - Accel</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>117</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>4) Z move for jump - Decel</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>118</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>4) Z move for jump - S-Curve</Name>
+			<Description />
+			<Units>%</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>119</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>5) X Coating Leading Edge - Speed</Name>
+			<Description />
+			<Units>mm/s</Units>
+			<DataType>Double</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>121</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>5) X Coating Leading Edge - Accel</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>122</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>5) X Coating Leading Edge - Decel</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>123</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>5) X Coating Leading Edge - S-Curve</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>124</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>5) Transition Dispense - Rate</Name>
+			<Description />
+			<Units>ul/s</Units>
+			<DataType>Double</DataType>
+			<Value>0</Value>
+			<Array>params</Array>
+			<Location>125</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Dispense Profile Type</Name>
+			<Description />
+			<Units />
+			<DataType>int</DataType>
+			<Value>0</Value>
+			<Array>params</Array>
+			<Location>126</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Dispense Profile Param 1</Name>
+			<Description />
+			<Units />
+			<DataType>Double</DataType>
+			<Value>0</Value>
+			<Array>params</Array>
+			<Location>127</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Dispense Profile Param 2</Name>
+			<Description />
+			<Units />
+			<DataType>Double</DataType>
+			<Value>0</Value>
+			<Array>params</Array>
+			<Location>128</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>Dispense Profile Param 3</Name>
+			<Description />
+			<Units />
+			<DataType>Double</DataType>
+			<Value>0</Value>
+			<Array>params</Array>
+			<Location>129</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>6) Enable Coating Offset</Name>
+			<Description />
+			<Units>bool</Units>
+			<DataType>bool</DataType>
+			<Value>1</Value>
+			<Array>params</Array>
+			<Location>130</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>6) Z move to Coating Offset - Height</Name>
+			<Description>Distance above substrate</Description>
+			<Units>um</Units>
+			<DataType>int</DataType>
+			<Value>25</Value>
+			<Array>params</Array>
+			<Location>131</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>6) Z move to Coating Offset - Speed</Name>
+			<Description />
+			<Units>mm/s</Units>
+			<DataType>Double</DataType>
+			<Value>50</Value>
+			<Array>params</Array>
+			<Location>132</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>6) Z move to Coating Offset - Accel</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>int</DataType>
+			<Value>41</Value>
+			<Array>params</Array>
+			<Location>133</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>6) Z move to Coating Offset - Decel</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>int</DataType>
+			<Value>41</Value>
+			<Array>params</Array>
+			<Location>134</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>6) Z move to Coating Offset - S-curve</Name>
+			<Description />
+			<Units>%</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>135</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>7) Z move to Coating Gap - Height</Name>
+			<Description>Distance above substrate</Description>
+			<Units>um</Units>
+			<DataType>int</DataType>
+			<Value>50</Value>
+			<Array>params</Array>
+			<Location>136</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>7) Z move to Coating Gap - Speed</Name>
+			<Description />
+			<Units>mm/s</Units>
+			<DataType>Double</DataType>
+			<Value>25</Value>
+			<Array>params</Array>
+			<Location>137</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>7) Z move to Coating Gap - Accel</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>138</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>7) Z move to Coating Gap - Decel</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>139</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>7) Z move to Coating Gap - S-curve</Name>
+			<Description />
+			<Units>%</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>140</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>8) X move to End Of Coating - Speed</Name>
+			<Description />
+			<Units>mm/s</Units>
+			<DataType>Double</DataType>
+			<Value>10</Value>
+			<Array>params</Array>
+			<Location>144</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>8) X move to End Of Coating - Accel</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>int</DataType>
+			<Value>41</Value>
+			<Array>params</Array>
+			<Location>145</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>8) X move to End Of Coating - Decel</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>int</DataType>
+			<Value>41</Value>
+			<Array>params</Array>
+			<Location>146</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>8) X Coating S-curve</Name>
+			<Description />
+			<Units>%</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>147</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>9) Z move to Trailing Offset Gap - Enable</Name>
+			<Description>Turn on/off Trailing Offset</Description>
+			<Units>0/1</Units>
+			<DataType>Boolean</DataType>
+			<Value>1</Value>
+			<Array>params</Array>
+			<Location>150</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>9) Z move to Trailing Offset Gap - X Position</Name>
+			<Description>Distance from End Of Coat position</Description>
+			<Units>mm</Units>
+			<DataType>Double</DataType>
+			<Value>2</Value>
+			<Array>params</Array>
+			<Location>151</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>9) Z move to Trailing Offset Gap - Gap</Name>
+			<Description>Height above substrate for Trailing coat</Description>
+			<Units>um</Units>
+			<DataType>int</DataType>
+			<Value>25</Value>
+			<Array>params</Array>
+			<Location>152</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>9) Z move to Trailing Offset Gap - Speed</Name>
+			<Description />
+			<Units>mm/s</Units>
+			<DataType>Double</DataType>
+			<Value>5</Value>
+			<Array>params</Array>
+			<Location>153</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>9) Z move to Trailing Offset Gap - Accel</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>int</DataType>
+			<Value>20</Value>
+			<Array>params</Array>
+			<Location>154</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>9) Z move to Trailing Offset Gap - Decel</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>int</DataType>
+			<Value>20</Value>
+			<Array>params</Array>
+			<Location>155</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>9) Z move to Trailing Offset Gap - S-curve</Name>
+			<Description />
+			<Units>%</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>156</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>11a) Recharge Rate</Name>
+			<Description />
+			<Units>ul/s</Units>
+			<DataType>Double</DataType>
+			<Value>500</Value>
+			<Array>params</Array>
+			<Location>157</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>11a) Post Recharge Delay</Name>
+			<Description />
+			<Units>ms</Units>
+			<DataType>Double</DataType>
+			<Value>0</Value>
+			<Array>params</Array>
+			<Location>158</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>12) Z move at EOC - Raise to Location</Name>
+			<Description>Distance from top</Description>
+			<Units>mm</Units>
+			<DataType>Double</DataType>
+			<Value>0</Value>
+			<Array>params</Array>
+			<Location>160</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>12) Z move at EOC - Speed</Name>
+			<Description />
+			<Units>mm/s</Units>
+			<DataType>Double</DataType>
+			<Value>50</Value>
+			<Array>params</Array>
+			<Location>161</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>12) Z move at EOC - Accel</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>162</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>12) Z move at EOC - Decel</Name>
+			<Description />
+			<Units>mm/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>163</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>12) Z move at EOC - S-Curve</Name>
+			<Description />
+			<Units>%</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>164</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>13) X move Return to Home - Home Position</Name>
+			<Description>Position After Move</Description>
+			<Units>mm</Units>
+			<DataType>Double</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>165</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>13) X move Return to Home - Speed</Name>
+			<Description>Speed to return</Description>
+			<Units>mm/s</Units>
+			<DataType>Double</DataType>
+			<Value>120</Value>
+			<Array>params</Array>
+			<Location>166</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>13) X move Return to Home - Accel</Name>
+			<Description>Return accel</Description>
+			<Units>mm/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>200</Value>
+			<Array>params</Array>
+			<Location>167</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>13) X move Return to Home - Decel</Name>
+			<Description>Return Decel</Description>
+			<Units>mm/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>168</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>13) X move Return to Home - S-Curve</Name>
+			<Description>Speed to return</Description>
+			<Units>%</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>169</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>10) Suckback - Enable</Name>
+			<Description>Turn on/off Head 'Suckback'</Description>
+			<Units>0/1</Units>
+			<DataType>Boolean</DataType>
+			<Value>0</Value>
+			<Array>params</Array>
+			<Location>170</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>10) Suckback Position</Name>
+			<Description>Distance from End Of Coating</Description>
+			<Units>mm</Units>
+			<DataType>Double</DataType>
+			<Value>10</Value>
+			<Array>params</Array>
+			<Location>171</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>10) Suckback - Speed</Name>
+			<Description />
+			<Units>ul/s</Units>
+			<DataType>Double</DataType>
+			<Value>2</Value>
+			<Array>params</Array>
+			<Location>172</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>10) Suckback - Accel</Name>
+			<Description />
+			<Units>ul/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>20</Value>
+			<Array>params</Array>
+			<Location>173</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>10) Suckback - Decel</Name>
+			<Description />
+			<Units>ul/s^2</Units>
+			<DataType>Double</DataType>
+			<Value>20</Value>
+			<Array>params</Array>
+			<Location>174</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>10) Suckback - S-curve</Name>
+			<Description />
+			<Units>%</Units>
+			<DataType>int</DataType>
+			<Value>100</Value>
+			<Array>params</Array>
+			<Location>175</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+		<RecipeParam>
+			<Name>10) Suckback - Volume</Name>
+			<Description />
+			<Units>ul</Units>
+			<DataType>Double</DataType>
+			<Value>1</Value>
+			<Array>params</Array>
+			<Location>176</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+    <RecipeParam>
+      <Name>Release Vacuum At EOC</Name>
+      <Description>Releases Vacuum at EOC Position During Coating.</Description>
+      <Units>mm</Units>
+      <DataType>int</DataType>
+      <Value>0</Value>
+      <Array>params</Array>
+      <Location>185</Location>
+      <Formatting />
+      <IsEditable>true</IsEditable>
+    </RecipeParam>
+    <RecipeParam>
+			<Name>3) Priming Dispense Stop Position - Segmented</Name>
+			<Description>EOP Substracted By Pump Stop Offset</Description>
+			<Units>mm</Units>
+			<DataType>Double</DataType>
+			<Value>0</Value>
+			<Array>params</Array>
+			<Location>193</Location>
+			<Formatting />
+			<IsEditable>true</IsEditable>
+		</RecipeParam>
+    <RecipeParam>
+      <Name>IR Pitch</Name>
+      <Units>mm</Units>
+      <DataType>Double</DataType>
+      <Value>150</Value>
+      <Array>params</Array>
+      <Location>195</Location>
+    </RecipeParam>
+    <RecipeParam>
+      <Name>IR Coating Start Offset</Name>
+      <Units>mm</Units>
+      <DataType>Double</DataType>
+      <Value>0</Value>
+      <Array>params</Array>
+      <Location>196</Location>
+    </RecipeParam>
+    <RecipeParam>
+      <Name>IR Post Coat Distance</Name>
+      <Units>mm</Units>
+      <DataType>Double</DataType>
+      <Value>50</Value>
+      <Array>params</Array>
+      <Location>197</Location>
+    </RecipeParam>
+    <RecipeParam>
+      <Name>IR Usage</Name>
+      <Units>#</Units>
+      <DataType>Double</DataType>
+      <Value>0</Value>
+      <Array>params</Array>
+      <Location>198</Location>
+    </RecipeParam>
+    <RecipeParam>
+      <Name>IR Delay On Return</Name>
+      <Units>sec</Units>
+      <DataType>Double</DataType>
+      <Value>0</Value>
+      <Array>params</Array>
+      <Location>199</Location>
+    </RecipeParam>
+  </RecipeParams>
+</Recipe>
